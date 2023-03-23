@@ -5,6 +5,7 @@ The risk assessment framework a proactive approach leveraging cyberthreat intell
 # Features
 The system identifies seven potential assets and 22 possible threats.
 
+![risk assessment flow](https://user-images.githubusercontent.com/47213565/227068264-6da3ba1f-2914-4395-99af-c37a5f900fb4.jpeg)
 
 
 # Threat Impact
