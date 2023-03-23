@@ -1,0 +1,23 @@
+ #Estimate decay rate and timespan  
+def find_decay(b_sev):
+    if str(b_sev) == ("CRITICAL"):
+          delta = 0.25
+          x=21
+    elif str(b_sev) == ("HIGH"):
+          delta = 0.5
+          x=14
+    elif str(b_sev) == ("MEDIUM"):
+          delta = 1.0
+          x=7
+    elif str(b_sev) == ("LOW"):
+          delta = 2.0
+          x=3
+    else:
+          delta = 4.0
+          x=1  
+    return delta, x
+
+
+b_sev = "CRITICAL"
+
+print(find_decay(b_sev))

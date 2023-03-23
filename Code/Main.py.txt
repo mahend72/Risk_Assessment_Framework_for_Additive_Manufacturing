@@ -1,0 +1,95 @@
+#Compute CVE Severity and Score
+#Before running this code, set the name of file and name of output file.
+#Run code for each year of CVE lists
+
+
+from matplotlib.ticker import is_decade
+import dateutil.parser as dp
+from datetime import datetime
+import operator
+
+#set weight to each parameter in order to compute source trust
+p_com=0.85
+W_ext=0.8
+W_tim=0.7
+W_com=0.65
+
+#set the source score as 0.8
+source_score=0.8
+
+#current time and timestamp
+dt = datetime.now()
+ts = datetime.timestamp(dt)
+
+#Define lists 
+len1=[]
+list_lmod=[]
+Final_list=[]
+
+# Define dictionary
+Final_dict1 = { }
+Final_dict2= { }
+
+#Set the file name for which the code has to be run
+file_name = "nvdcve-1.1-recent.json"
+data1=json.loads(uploaded[file_name].decode("utf-8"))
+
+#Set the name of output file for each CVE list
+with open ('Outputcve2023recent.csv', 'w') as fp:
+
+  for i in data1['CVE_Items']:
+    try:
+      id=i['cve']['CVE_data_meta']['ID']
+      fp.write(id)
+      fp.write(",")
+
+      ext=i['cve']['references']['reference_data']
+      b_sev=i['impact']['baseMetricV3']['cvssV3']['baseSeverity']
+      b_score=i['impact']['baseMetricV3']['cvssV3']['baseScore']
+      fp.write(b_sev)
+      fp.write(",")
+      fp.write(str(b_score))
+      fp.write(",")
+
+      #Call decay rate function
+      delta,x =find_decay(b_sev)
+     
+      
+      #Assess time and related parameters
+      pub_time = dp.parse(i['publishedDate'])
+      pub_time_in_seconds = pub_time.timestamp()
+      lmod_time = dp.parse(i['lastModifiedDate'])
+      lmod_time_in_seconds = lmod_time.timestamp()
+      list_lmod.append(lmod_time_in_seconds)
+
+      time_diff=(lmod_time_in_seconds)-(pub_time_in_seconds)
+      time1=ts-lmod_time_in_seconds
+      days = divmod(time1, 86400) 
+      hours = divmod(days[1], 3600)
+      minutes = divmod(hours[1], 60)
+
+      #Call threat likelihood function
+      like_score =find_timeliness(time1)
+       
+      #compute decay function
+      f_x=0.0
+      for i in range(x):
+          f_x = float(pow(i/100,delta))+f_x
+      #print("delay_value:", max(0,(1-f_x)))
+
+      #compute Individual score 
+      ind_score= source_score*b_score*like_score*max(0,f_x)
+      len1.append(len(ext[0]))
+      p_ext=len(ext[0])/max(len1)
+
+      #compute timeliness
+      min_lmod=divmod(min(list_lmod), 86400)
+      lmod1=divmod(lmod_time_in_seconds, 86400)
+      p_tim= min_lmod[0]/lmod1[0]
+      conf_score = (W_ext*p_ext+W_tim*p_tim+W_com*p_com)/(W_ext+W_tim+W_com)
+      Final_score = (conf_score)*(ind_score)
+      fp.write(str(Final_score))
+
+    except:
+      pass
+    fp.write("\n")

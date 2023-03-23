@@ -1,0 +1,4 @@
+#Upload CVEs files
+import json
+from google.colab import files
+uploaded = files.upload()

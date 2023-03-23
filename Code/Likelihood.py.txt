@@ -1,0 +1,16 @@
+ #compute threat likelihood   
+def find_timeliness(time1):
+    if time1 > 31536000:
+          lik_score = 0.5
+    elif time1 >2628000:
+          lik_score = 5.0
+    elif time1 > 1314000:
+          lik_score = 5.0
+    elif time1 > 86400:
+          lik_score = 7.0
+    else:
+          lik_score = 9.0
+    return lik_score
+time1 = 5688455
+
+print(find_timeliness(time1))

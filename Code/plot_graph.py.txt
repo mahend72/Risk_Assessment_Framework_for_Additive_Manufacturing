@@ -1,0 +1,48 @@
+# Plot decay rate graph
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = 50
+x_elem=[]
+y1_elem=[]
+y2_elem=[]
+y3_elem=[]
+y4_elem=[]
+y5_elem=[]
+
+for x in range(t):
+  y1 = max(0,1-float(pow(x/t,1/0.25)))
+  x_elem.append(x)
+  y1_elem.append(y1)
+
+for x in range(t):
+  y2 = max(0,1-float(pow(x/t,1/0.5)))
+  y2_elem.append(y2)
+  #print(y2_elem)
+
+for x in range(t):
+  y3 = max(0,1-float(pow(x/t,1/1)))
+  y3_elem.append(y3)
+  #print(y3_elem)
+
+for x in range(t):
+  y4 = max(0,1-float(pow(x/t,1/2)))
+  y4_elem.append(y4)
+  #print(y4_elem)
+
+for x in range(t):
+  y5 = max(0,1-float(pow(x/t,1/4)))
+  y5_elem.append(y5)
+  #print(y5_elem)
+
+plt.xlabel('#number of hours x')
+plt.ylabel('Decay rate, f(x)')
+
+plt.plot(x_elem, y1_elem)
+plt.plot(x_elem, y2_elem)
+plt.plot(x_elem, y3_elem)
+plt.plot(x_elem, y4_elem)
+plt.plot(x_elem, y5_elem)
+
+plt.legend(["δ=0.25", "δ=0.50","δ=1","δ=2.0","δ=4.0"])
+plt.show()
