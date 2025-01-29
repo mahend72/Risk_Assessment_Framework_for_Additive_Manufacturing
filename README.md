@@ -30,6 +30,8 @@ The following attributes determine threat likelihood:
 The study demonstrates the usefulness of the risk assessment technique in finding severe CVEs that represent significant vulnerabilities to AM settings using the MITRE Common Vulnerabilities and Exposures dataset.
 
 
+# cite
+Kumar, Mahender, Gregory Epiphaniou, and Carsten Maple. "Comprehensive Threat Analysis in Additive Manufacturing Supply Chain: A Hybrid Qualitative and Quantitative Risk Assessment Framework." Production Engineering (2024): 1-19.
 
 # Project Lead
 Mahender Kumar(@mahend72)
