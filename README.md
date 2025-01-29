@@ -31,7 +31,7 @@ The study demonstrates the usefulness of the risk assessment technique in findin
 
 
 # cite
-Kumar, Mahender, Gregory Epiphaniou, and Carsten Maple. "Comprehensive Threat Analysis in Additive Manufacturing Supply Chain: A Hybrid Qualitative and Quantitative Risk Assessment Framework." Production Engineering (2024): 1-19.
+_Kumar, Mahender_, Gregory Epiphaniou, and Carsten Maple. "Comprehensive Threat Analysis in Additive Manufacturing Supply Chain: A Hybrid Qualitative and Quantitative Risk Assessment Framework." Production Engineering (2024): 1-19.
 
 # Project Lead
 Mahender Kumar(@mahend72)
