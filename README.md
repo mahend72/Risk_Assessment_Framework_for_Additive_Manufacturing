@@ -11,11 +11,11 @@ The system identifies seven potential assets and 22 possible threats.
 
 # Threat Impact
 Threat impact is estimated based on the following threat characteristics:
-* Targetted precision: Measures how accurately the threat can focus on specific victims or systems.
-* Area of Impact: Assesses the extent of systems, networks, or regions affected by the threat.
-* Collateral Damage
-* Stealth
-* Attack Repeatability
+* _Targetted precision_: Measures how accurately the threat can focus on specific victims or systems.
+* _Area of Impact_: Assesses the extent of systems, networks, or regions affected by the threat.
+* _Collateral Damage_: Evaluates unintended consequences affecting non-targeted entities.
+* _Stealth_: Determines how well the threat evades detection by security measures.
+* _Attack Repeatability_: Gauges how easily the threat can be executed multiple times.
 
 
 # Threat Likelihood
