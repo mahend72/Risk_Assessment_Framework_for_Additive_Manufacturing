@@ -1,7 +1,7 @@
 # **Risk Assessment Framework for Additive Manufacturing**
 The risk assessment framework is a proactive approach leveraging cyber threat intelligence tools to identify, analyse, and assess potential threats in the additive manufacturing (AM) supply chain.
 
-<img src="https://user-images.githubusercontent.com/47213565/227068264-6da3ba1f-2914-4395-99af-c37a5f900fb4.jpeg" alt="risk assessment flow" width="200">
+<img src="https://user-images.githubusercontent.com/47213565/227068264-6da3ba1f-2914-4395-99af-c37a5f900fb4.jpeg" alt="risk assessment flow" width="400">
 
 # Features
 The system identifies seven potential assets and 22 possible threats.
