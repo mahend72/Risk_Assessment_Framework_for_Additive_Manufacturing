@@ -27,8 +27,7 @@ The following attributes determine threat likelihood:
 
 
 # Evaluation
-The study demonstrates the usefulness of the risk assessment technique in finding severe CVEs that represent significant vulnerabilities to AM settings using the MITRE Common Vulnerabilities and Exposures dataset.
-
+We evaluated the framework using the MITRE CVE dataset to test whether it can prioritize AM-relevant security risks. CVEs are mapped to the framework’s 7 assets and 22 threat types, and each case is scored using Impact (targeted precision, area of impact, collateral damage, stealth, repeatability) and Likelihood (source trust, severity, frequency). The resulting risk ranking highlights the most critical vulnerabilities for AM supply-chain settings and provides interpretable scores to support analyst triage.
 
 # cite
 _Kumar, Mahender_, Gregory Epiphaniou, and Carsten Maple. "Comprehensive Threat Analysis in Additive Manufacturing Supply Chain: A Hybrid Qualitative and Quantitative Risk Assessment Framework." Production Engineering (2024): 1-19.
