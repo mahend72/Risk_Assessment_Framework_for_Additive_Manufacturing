@@ -8,7 +8,7 @@ The risk assessment framework is a proactive approach leveraging cyber threat in
 
 
 # Features
-The system identifies seven potential assets and 22 possible threats.
+The system identifies seven potential assets and 22 potential threats.
 
 
 
