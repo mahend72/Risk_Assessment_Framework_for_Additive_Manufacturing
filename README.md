@@ -31,7 +31,7 @@ The following attributes determine threat likelihood:
 
 
 # Evaluation
-We evaluated the framework using the MITRE CVE dataset to test whether it can prioritise AM-relevant security risks. CVEs are mapped to the framework’s 7 assets, and 22 threat types, and each case is scored using Impact (targeted precision, area of impact, collateral damage, stealth, repeatability) and Likelihood (source trust, severity, frequency). The resultant risk ranking highlights the most critical vulnerabilities for AM supply-chain settings and provides interpretable scores to support analyst triage.
+We evaluated the framework using the MITRE CVE dataset to test whether it can prioritise AM-relevant security risks. CVEs are mapped to the framework’s 7 assets and 22 threat types, and each case is scored using Impact (targeted precision, area of impact, collateral damage, stealth, repeatability) and Likelihood (source trust, severity, frequency). The resultant risk ranking highlights the most critical vulnerabilities for AM supply-chain settings and provides interpretable scores to support analyst triage.
 
 ## Related Publications
 
