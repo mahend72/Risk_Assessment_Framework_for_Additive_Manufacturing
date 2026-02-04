@@ -1,3 +1,67 @@
+# Risk Assessment Framework for Additive Manufacturing (AM)
+
+A **proactive, intelligence-driven risk assessment framework** for identifying, analysing, and prioritising cyber-physical threats across the **Additive Manufacturing (AM) supply chain**. The framework leverages cyber threat intelligence signals to produce **interpretable impact/likelihood scores** and an overall **risk ranking** that supports analyst triage and mitigation planning.
+
+---
+
+## Risk Assessment Flow
+
+**Threat Intelligence → Asset & Threat Mapping → Impact Scoring → Likelihood Scoring → Risk Ranking → Analyst Triage**
+
+---
+
+## Features
+
+- Models the AM supply chain using **7 critical asset categories**
+- Covers **22 AM-relevant threat types**
+- Provides **transparent scoring** to support consistent decision-making
+- Produces a **ranked list of risks** to focus mitigation on the most critical issues
+
+---
+
+## Threat Impact Scoring
+
+Threat impact is estimated using five characteristics:
+
+- **Targeted Precision**: how accurately the threat can focus on a specific victim, component, or AM process stage  
+- **Area of Impact**: the breadth of systems, networks, facilities, or regions potentially affected  
+- **Collateral Damage**: unintended consequences affecting non-targeted entities  
+- **Stealth**: the ability of the threat to evade detection and remain undetected  
+- **Attack Repeatability**: how easily the attack can be executed repeatedly or at scale  
+
+---
+
+## Threat Likelihood Scoring
+
+Threat likelihood is estimated using:
+
+- **Source Trust**: confidence in the credibility and relevance of the data source  
+- **Severity**: technical seriousness of the threat/vulnerability and plausible harm  
+- **Frequency**: how often the threat is observed or how commonly it occurs in practice  
+
+---
+
+## Evaluation (MITRE CVE Dataset)
+
+We evaluated the framework using the **MITRE CVE dataset** to test whether it can prioritise AM-relevant security risks.
+
+- CVEs are mapped to the framework’s **7 asset categories** and **22 threat types**
+- Each mapped case is scored using:
+  - **Impact**: targeted precision, area of impact, collateral damage, stealth, repeatability  
+  - **Likelihood**: source trust, severity, frequency  
+- The resulting **risk ranking** highlights the most critical vulnerabilities for AM supply-chain environments and provides **interpretable scores** to support analyst triage and mitigation prioritisation.
+
+---
+
+## Outputs
+
+- **Impact score** per threat/vulnerability instance
+- **Likelihood score** per threat/vulnerability instance
+- **Overall risk score** and **ranked list** for prioritisation
+- Optional: score breakdowns to explain *why* a case ranks highly
+
+---
+
 # **Risk Assessment Framework for Additive Manufacturing**
 The risk assessment framework is a proactive approach that leverages cyber threat intelligence tools to identify, analyse, and assess potential threats in the additive manufacturing (AM) supply chain.
 
