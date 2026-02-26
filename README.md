@@ -29,7 +29,7 @@ Threat impact is estimated using five characteristics:
 
 - **Targeted Precision**: how accurately the threat can focus on a specific victim, component, or AM process stage  
 - **Area of Impact**: the breadth of systems, networks, facilities, or regions potentially affected  
-- **Collateral Damage**: unintended consequences affecting non-targeted entities  
+- **Collateral Damage**: unintended consequences involving non-targeted entities  
 - **Stealth**: the ability of the threat to evade detection and remain undetected  
 - **Attack Repeatability**: how easily the attack can be executed repeatedly or at scale  
 
