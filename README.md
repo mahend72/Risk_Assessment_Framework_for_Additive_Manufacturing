@@ -40,7 +40,7 @@ Threat impact is estimated using five characteristics:
 Threat likelihood is estimated using:
 
 - **Source Trust**: confidence in the credibility and relevance of the data source  
-- **Severity**: technical seriousness of the threat/vulnerability and plausible harm  
+- **Severity**: technical seriousness of the threat/vulnerability and reasonable harm  
 - **Frequency**: how often the threat is observed or how commonly it occurs in practice  
 
 ---
