@@ -1,6 +1,6 @@
 # Risk Assessment Framework for Additive Manufacturing (AM)
 
-A **proactive, intelligence-driven risk assessment framework** for identifying, analysing, and prioritising cyber-physical threats across the **Additive Manufacturing (AM) supply chain**. The framework leverages cyber threat intelligence signals to produce **interpretable impact/likelihood scores** and an overall **risk ranking** that supports analyst triage and mitigation planning.
+A **proactive, intelligence-driven risk assessment framework** for identifying, analysing, and prioritising cyber-physical threats across the **Additive Manufacturing (AM) supply chain**. The framework leverages cyber threat intelligence signals to produce **interpretable impact/likelihood scores** and an overall **risk ranking**, supporting analyst triage and mitigation planning.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47213565/227068264-6da3ba1f-2914-4395-99af-c37a5f900fb4.jpeg" alt="risk assessment flow" width="400">
