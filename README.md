@@ -27,7 +27,7 @@ A **proactive, intelligence-driven risk assessment framework** for identifying, 
 
 Threat impact is estimated using five characteristics:
 
-- **Targeted Precision**: how accurately the threat can focus on a specific victim, component, or AM process stage  
+- **Targeted Precision**: how accurately the threat can focus on a detailed victim, component, or AM process stage  
 - **Area of Impact**: the breadth of systems, networks, facilities, or regions potentially affected  
 - **Collateral Damage**: unintended consequences involving non-targeted entities  
 - **Stealth**: the ability of the threat to evade detection and remain undetected  
