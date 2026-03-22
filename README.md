@@ -53,7 +53,7 @@ We evaluated the framework using the **MITRE CVE dataset** to test whether it ca
 - Each mapped case is scored using:
   - **Impact**: targeted precision, area of impact, collateral damage, stealth, repeatability  
   - **Likelihood**: source trust, severity, frequency  
-- The resulting **risk ranking** highlights the most critical vulnerabilities for AM supply-chain environments and provides **interpretable scores** to support analyst triage and mitigation prioritisation.
+- The resulting **risk ranking** highlights the most critical vulnerability for AM supply-chain environments and provides **interpretable scores** to support analyst triage and mitigation prioritisation.
 
 ---
 
